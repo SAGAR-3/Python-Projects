@@ -1,0 +1,4 @@
+print("------We to Pet Shop Name Application------")
+pet = input("Please Enter your Pet Name\n")
+city = input("Please Enter your City Name\n")
+print("Your Pet Shop Name is :", pet+" "+city)
