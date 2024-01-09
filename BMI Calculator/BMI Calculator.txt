@@ -1,0 +1,15 @@
+weight = input("Enter the Value of Weight:")
+height = input("Enter the Value of Height:")
+
+B = float(weight)/(float(height)*float(height))
+B_int = int(B)
+print("The BMI of your body is -- kg/m2", B_int)
+
+if B < 18.5:
+    print("Under Weight")
+elif 18.5 < B < 25:
+    print("Normal Range")
+elif 25 < B < 30:
+    print("Over Weight")
+else:
+    print("Obese")
