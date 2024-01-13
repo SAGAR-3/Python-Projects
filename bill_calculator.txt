@@ -1,0 +1,21 @@
+# if the bill was Rs 150, split between 5 people, with 12% tip
+bill = input("Enter the Amount of bill")
+tip = input("Enter the tip percentage")
+people = input("Enter the number of people where we need to split the bill")
+
+bill_int = float(bill)
+tip_int = float(tip)
+people_int = int(people)
+
+# total_amount = bill_int + (tip_int/100)
+
+per_bill = bill_int+(bill_int*(tip_int/100))
+
+total_split_amount = (per_bill/people_int)
+
+# total_split_amount = total_amount/people_int
+print(per_bill)
+
+print("The split amount between persons is ", round(total_split_amount,2))
+
+
