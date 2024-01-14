@@ -1,0 +1,25 @@
+print("Welcome to Roller Coaster Calculator ")
+
+height = input("Enter your height in cm")
+bill = 0
+
+height_no = int(height)
+
+if height_no >= 120:
+    print("You are eligible for roller coaster ride")
+    age = int(input("What is your age ?"))
+    if 30 > age > 18:
+        bill = 250
+        print("Please pay rupees 250")
+    elif 40 > age > 30:
+        bill = 500
+        print("Please pay Rs 500")
+    else:
+        bill = 800
+        print("Please pay Rs 800")
+    photo = input("Do you want a photo also ?")
+    if photo == 'yes':
+        bill += 10
+    print(f"Please pay the total bill{bill}")
+else:
+    print("You are not eligible for roller coaster ride")
